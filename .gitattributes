@@ -1,0 +1,13 @@
+# Media is binary. Never diff, never merge, never touch line endings.
+*.mp4  binary -diff -merge
+*.mov  binary -diff -merge
+*.webm binary -diff -merge
+*.gif  binary -diff
+*.png  binary -diff
+*.jpg  binary -diff
+*.jpeg binary -diff
+*.webp binary -diff
+
+# Text files keep LF in the repo regardless of platform.
+*.md   text eol=lf
+*.yml  text eol=lf
